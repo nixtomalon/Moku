@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./.github/assets/logo.png" alt="Mihon logo" title="Moku logo" width="80"/>
+<img src="./.github/assets/logo.png" alt="Moku logo" title="Moku logo" width="80"/>
 </a>
 
 # Moku for AniList(#)
