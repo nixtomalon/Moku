@@ -3,7 +3,7 @@
 <img src="./.github/assets/logo.png" alt="Moku logo" title="Moku logo" width="80"/>
 </a>
 
-# Moku for AniList(#)
+# Moku for AniList
 
 ### Mobile App for AniList
 Cross-platform flutter mobile app for AniList
