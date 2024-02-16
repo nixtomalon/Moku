@@ -46,6 +46,8 @@ flutter_icons:
   android: true
   ios: true
   image_path: "app_icon.png" # Path to your icon
+  adaptive_icon_background: "#787a9e" # Optional: Background color for adaptive icons (Android)
+  adaptive_icon_foreground: "app_icon.png" # Optional: Foreground for adaptive icons
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

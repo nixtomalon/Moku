@@ -1,1 +1,1 @@
-# AniList Mobile
+# Moku for AniList
