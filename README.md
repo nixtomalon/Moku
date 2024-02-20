@@ -8,6 +8,14 @@
 ### Mobile App for AniList
 Cross-platform flutter mobile app for AniList
 
+[![GitHub downloads](https://img.shields.io/github/downloads/Maclean-D/Moku/total?label=downloads&labelColor=27303D&color=0D1117&logo=github&logoColor=FFFFFF&style=flat)](https://github.com/Maclean-D/Moku/releases)
+
+[![License: Apache-2.0](https://img.shields.io/github/license/Maclean-D/Moku?labelColor=27303D&color=0877d2)](/LICENSE)
+
+## Download
+
+[![Moku Pre-Release](https://img.shields.io/github/release/Maclean-D/Moku.svg?maxAge=3600&label=Stable&labelColor=06599d&color=043b69)](https://github.com/Maclean-D/Moku/releases)
+
 ## Contributins
 
 Pull requests are welcome.
