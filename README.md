@@ -12,9 +12,7 @@ Cross-platform flutter mobile app for AniList
 
 [![License: Apache-2.0](https://img.shields.io/github/license/Maclean-D/Moku?labelColor=27303D&color=0877d2)](/LICENSE)
 
-## Download
-
-[![Moku Pre-Release](https://img.shields.io/github/release/Maclean-D/Moku.svg?maxAge=3600&label=Stable&labelColor=06599d&color=043b69)](https://github.com/Maclean-D/Moku/releases)
+## [Download](https://github.com/Maclean-D/Moku/releases)
 
 ## Contributins
 
