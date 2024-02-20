@@ -14,7 +14,7 @@ Cross-platform flutter mobile app for AniList
 
 ## [Download](https://github.com/Maclean-D/Moku/releases)
 
-## Contributins
+## Contributions
 
 Pull requests are welcome.
 
