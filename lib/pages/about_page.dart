@@ -4,6 +4,17 @@ import 'package:url_launcher/url_launcher.dart';
 class AboutPage extends StatelessWidget {
   const AboutPage({Key? key}) : super(key: key);
 
+  Future<void> _launchURL(BuildContext context, String urlString) async {
+    final Uri url = Uri.parse(urlString);
+    if (await canLaunchUrl(url)) {
+      await launchUrl(url);
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Could not launch $urlString')),
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,34 +54,15 @@ class AboutPage extends StatelessWidget {
                       vertical: 0,
                     ),
                     title: const Text("What's new"),
-                    onTap: () async {
-                      const url = 'https://github.com/Maclean-D/Moku/releases';
-                      if (await canLaunchUrl(Uri.parse(url))) {
-                        await launchUrl(Uri.parse(url));
-                      } else {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(content: Text('Could not launch URL')),
-                        );
-                      }
-                    },
+                    onTap: () => _launchURL(context, 'https://github.com/Maclean-D/Moku/releases'),
                   ),
                   // Add more ListTiles here for additional items
                 ],
               ),
             ),
             IconButton(
-              // Assuming you're using a generic code icon or a custom GitHub icon
-              icon: Icon(Icons.code), // Change this icon to your GitHub icon
-              onPressed: () async {
-                const url = 'https://github.com/Maclean-D/Moku';
-                if (await canLaunchUrl(Uri.parse(url))) {
-                  await launchUrl(Uri.parse(url));
-                } else {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Could not launch URL')),
-                  );
-                }
-              },
+              icon: Icon(Icons.code),
+              onPressed: () => _launchURL(context, 'https://github.com/Maclean-D/Moku'),
             ),
             // Add more widgets here if needed
           ],

@@ -11,7 +11,11 @@ class ProfilePage extends StatelessWidget {
       length: 5, // Number of tabs
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Profile'),
+          leading: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Image.asset('lib/assets/default_profile.png'), // Your profile image here
+          ),
+          title: const Text('Username'),
           centerTitle: false, // Aligns the title to the left
           bottom: const TabBar(
             isScrollable: true, // Makes the tab bar scrollable

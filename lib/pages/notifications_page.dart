@@ -22,22 +22,29 @@ class _NotificationsPageState extends State<NotificationsPage> {
   }
 
   @override
-  void initState() {
-    super.initState();
-    // Initialize the WebViewController here if needed
-    _controller = WebViewController()
-      ..setJavaScriptMode(JavaScriptMode.unrestricted)
-      ..setNavigationDelegate(
-        NavigationDelegate(onNavigationRequest: (NavigationRequest request) {
-          if (request.url.startsWith('https://anilist.co/settings/')) {
-            // Prevent navigation in WebView and launch externally if settings page is navigated to
-            _launchSettings();
-            return NavigationDecision.prevent;
-          }
-          return NavigationDecision.navigate;
-        }),
-      );
-  }
+    void initState() {
+      super.initState();
+      _controller = WebViewController()
+        ..setJavaScriptMode(JavaScriptMode.unrestricted)
+        ..setNavigationDelegate(
+          NavigationDelegate(
+            onNavigationRequest: (NavigationRequest request) {
+              if (request.url.startsWith('https://anilist.co/settings/')) {
+                _launchSettings();
+                return NavigationDecision.prevent;
+              }
+              return NavigationDecision.navigate;
+            },
+            onPageFinished: (String url) {
+              // JavaScript code to remove the element
+              _controller.runJavaScript("""
+                document.querySelector('div.mobile-nav').style.display='none';
+              """);
+            },
+          ),
+        );
+    }
+
 
   @override
   Widget build(BuildContext context) {
