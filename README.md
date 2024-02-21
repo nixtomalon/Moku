@@ -21,9 +21,13 @@ Cross-platform flutter mobile app for AniList
 ### Roadmap
 <div  align="left">
 [ ] Login  
+
 [ ] Anime/Manga  
+
 [ ] Profile Page  
+
   [ ] Feed  
+  
     - [ ] Create Status  
   - [ ] Activity History  
   - [ ] Following  
