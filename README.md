@@ -16,58 +16,61 @@ Cross-platform flutter mobile app for AniList
 
 ## Features
 
-### Roadmap
+## Features
 
-<div align="left">
-- [ ] Profile Page
-  - [ ] Feed
-    - [ ] Create Status
-  - [ ] Activity History
-  - [ ] Following
-  - [ ] Followers
-  - [ ] Threads
-  - [ ] Comments
-  - [ ] Favorites
-  - [ ] Stats
-  - [ ] Reviews
-  - [ ] Submissions
-- [ ] Lists
-  - [ ] Custom Lists
-  - [ ] Cards of Anime/Manga
-    - [ ] Anime/Manga Pages
-      - [ ] Overview
-      - [ ] Characters
-      - [ ] Staff
-      - [ ] Reviews
-      - [ ] Stats
-      - [ ] Social
-- [ ] Home
-  - [ ] Following
-  - [ ] Global
-  - [ ] Notifications
-- [ ] Browse
-  - [ ] Anime/Manga
-    - [ ] Trending now
-    - [ ] Popular this season
-    - [ ] Popular Manhwa
-    - [ ] Upcoming next season
-    - [ ] All time popular
-    - [ ] Top 100 Anime
-  - [ ] Characters/Staff
-    - [ ] Birthdays
-    - [ ] Most Favorited
-  - [ ] Search
-- [ ] Settings
-  -  [ ] Appearance
-    -  [ ] Set app theme
-    -  [ ] Set app color
-  -  [ ] Account
-    - [X] Login
-    - [ ] Logout
-  -  [X] AniList Settings
-  -  [ ] About
-    - [ ] Auto-updating Version
-    - [ ] What's new
+### Roadmap
+<div  align="left">
+- [ ] Login  
+- [ ] Anime/Manga  
+- [ ] Profile Page  
+  - [ ] Feed  
+    - [ ] Create Status  
+  - [ ] Activity History  
+  - [ ] Following  
+  - [ ] Followers  
+  - [ ] Threads  
+  - [ ] Comments  
+  - [ ] Favorites  
+  - [ ] Stats  
+  - [ ] Reviews  
+  - [ ] Submissions  
+- [ ] Lists  
+  - [ ] Custom Lists  
+  - [ ] Cards of Anime/Manga  
+    - [ ] Anime/Manga Pages  
+      - [ ] Overview  
+      - [ ] Characters  
+      - [ ] Staff  
+      - [ ] Reviews  
+      - [ ] Stats  
+      - [ ] Social  
+- [ ] Home  
+  - [ ] Following  
+  - [ ] Global  
+  - [ ] Notifications  
+- [ ] Browse  
+  - [ ] Anime/Manga  
+    - [ ] Trending now  
+    - [ ] Popular this season  
+    - [ ] Popular Manhwa  
+    - [ ] Upcoming next season  
+    - [ ] All time popular  
+    - [ ] Top 100 Anime  
+  - [ ] Characters/Staff  
+    - [ ] Birthdays  
+    - [ ] Most Favorited  
+  - [ ] Search  
+- [ ] Settings  
+  - [ ] Appearance  
+    - [ ] Set app theme  
+    - [ ] Set app color  
+  - [ ] Account  
+    - [X] Login  
+    - [ ] Logout  
+  - [X] AniList Settings  
+  - [ ] About  
+    - [ ] Auto-updating Version  
+    - [ ] What's new  
     - [ ] Github link
 <div>
 
