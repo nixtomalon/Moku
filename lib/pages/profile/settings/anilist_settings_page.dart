@@ -37,7 +37,7 @@ Future<void> _launchURL(String urlString) async {
           ListTile(
             leading: Icon(Icons.language, color: colorScheme.primary), // Apply primary color
             title: const Text('Anime & Manga'),
-            subtitle: const Text('Title, Staff, & Character Language, NSFW'),
+            subtitle: const Text('Title, Staff, Character Language, NSFW'),
             onTap: () => _launchURL('https://anilist.co/settings/media'),
           ),
           ListTile(

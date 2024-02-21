@@ -46,7 +46,7 @@ class AboutPage extends StatelessWidget {
                       vertical: 8.0,
                     ),
                     title: Text("Version"),
-                    subtitle: Text("Preview 0.0.1"),
+                    subtitle: Text("Moku 0.0.1"),
                   ),
                   ListTile(
                     contentPadding: const EdgeInsets.symmetric(
