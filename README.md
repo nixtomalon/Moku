@@ -22,7 +22,6 @@ Cross-platform flutter mobile app for AniList
 <div  align="left">
 
 
-- [ ] Login  
 - [ ] Anime/Manga  
 - [ ] Profile Page  
   - [ ] Feed  
