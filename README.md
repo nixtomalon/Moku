@@ -18,6 +18,7 @@ Cross-platform flutter mobile app for AniList
 
 ### Roadmap
 
+<div align="left">
 - [ ] Profile Page
   - [ ] Feed
     - [ ] Create Status
@@ -68,6 +69,7 @@ Cross-platform flutter mobile app for AniList
     - [ ] Auto-updating Version
     - [ ] What's new
     - [ ] Github link
+<div>
 
 ## Contributions
 
