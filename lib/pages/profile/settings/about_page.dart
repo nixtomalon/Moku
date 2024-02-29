@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class AboutPage extends StatelessWidget {
+class AboutPage extends StatefulWidget {
   const AboutPage({Key? key}) : super(key: key);
+
+  @override
+  State<AboutPage> createState() => _AboutPageState();
+}
+
+class _AboutPageState extends State<AboutPage> {
+  String _appVersion = "";
 
   Future<void> _launchURL(BuildContext context, String urlString) async {
     final Uri url = Uri.parse(urlString);
@@ -13,6 +21,17 @@ class AboutPage extends StatelessWidget {
         SnackBar(content: Text('Could not launch $urlString')),
       );
     }
+  }
+
+  void getAppDetails() async {
+    PackageInfo packageInfo = await PackageInfo.fromPlatform();
+    setState(() => _appVersion = packageInfo.version);
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    getAppDetails();
   }
 
   @override
@@ -40,13 +59,15 @@ class AboutPage extends StatelessWidget {
             Flexible(
               child: ListView(
                 children: [
-                  const ListTile(
+                  ListTile(
                     contentPadding: EdgeInsets.symmetric(
                       horizontal: 16.0,
                       vertical: 8.0,
                     ),
                     title: Text("Version"),
-                    subtitle: Text("Moku 0.0.1"),
+                    subtitle: _appVersion.isEmpty
+                        ? Text("Loading...")
+                        : Text(_appVersion),
                   ),
                   ListTile(
                     contentPadding: const EdgeInsets.symmetric(
@@ -54,7 +75,8 @@ class AboutPage extends StatelessWidget {
                       vertical: 0,
                     ),
                     title: const Text("What's new"),
-                    onTap: () => _launchURL(context, 'https://github.com/Maclean-D/Moku/releases'),
+                    onTap: () => _launchURL(
+                        context, 'https://github.com/Maclean-D/Moku/releases'),
                   ),
                   // Add more ListTiles here for additional items
                 ],
@@ -62,7 +84,8 @@ class AboutPage extends StatelessWidget {
             ),
             IconButton(
               icon: Icon(Icons.code),
-              onPressed: () => _launchURL(context, 'https://github.com/Maclean-D/Moku'),
+              onPressed: () =>
+                  _launchURL(context, 'https://github.com/Maclean-D/Moku'),
             ),
             // Add more widgets here if needed
           ],
